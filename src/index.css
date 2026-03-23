@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface-container-high: #e6e8ec;
+  --color-secondary-fixed: #cde6f4;
+  --color-inverse-surface: #0c0e10;
+  --color-on-tertiary-fixed: #420e00;
+  --color-on-error: #fff7f7;
+  --color-on-surface: #2f3336;
+  --color-secondary-fixed-dim: #bfd8e5;
+  --color-on-tertiary: #fff7f5;
+  --color-tertiary-dim: #903618;
+  --color-outline: #777b7f;
+  --color-primary-dim: #3d4c9f;
+  --color-tertiary-fixed-dim: #ff8b67;
+  --color-on-tertiary-container: #691b00;
+  --color-on-primary: #faf8ff;
+  --color-surface-container: #eceef1;
+  --color-on-primary-fixed: #071c72;
+  --color-surface-container-highest: #e0e3e7;
+  --color-surface-container-low: #f3f3f6;
+  --color-on-background: #2f3336;
+  --color-on-secondary: #f2faff;
+  --color-inverse-on-surface: #9c9d9f;
+  --color-primary-fixed: #b3bdff;
+  --color-surface-tint: #4958ac;
+  --color-surface-variant: #e0e3e7;
+  --color-error: #ac3149;
+  --color-tertiary-container: #ffa183;
+  --color-background: #f9f9fb;
+  --color-primary-container: #b3bdff;
+  --color-on-secondary-container: #3e5560;
+  --color-outline-variant: #afb2b6;
+  --color-inverse-primary: #96a5ff;
+  --color-tertiary: #a04223;
+  --color-secondary: #4b626e;
+  --color-primary-fixed-dim: #a1aeff;
+  --color-on-tertiary-fixed-variant: #752306;
+  --color-surface: #f9f9fb;
+  --color-on-primary-container: #243487;
+  --color-tertiary-fixed: #ffa183;
+  --color-secondary-container: #cde6f4;
+  --color-surface-container-lowest: #ffffff;
+  --color-on-surface-variant: #5c5f63;
+  --color-surface-bright: #f9f9fb;
+  --color-surface-dim: #d6dadf;
+  --color-on-secondary-fixed: #2b424d;
+  --color-error-dim: #770326;
+  --color-error-container: #f76a80;
+  --color-primary: #4958ac;
+  --color-on-primary-fixed-variant: #2e3d90;
+  --color-secondary-dim: #3f5661;
+  --color-on-secondary-fixed-variant: #475f6a;
+  --color-on-error-container: #68001f;
+
+  --font-headline: "Manrope", sans-serif;
+  --font-body: "Plus Jakarta Sans", sans-serif;
+  --font-label: "Plus Jakarta Sans", sans-serif;
+
+  --radius-DEFAULT: 0.25rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-full: 9999px;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-on-background font-body min-h-screen pb-32;
+  }
+}
+
+@layer utilities {
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+    vertical-align: middle;
+  }
+  .text-display-lg { font-size: 3.5rem; line-height: 1.1; }
+  .text-headline-md { font-size: 1.75rem; line-height: 1.2; }
+}
